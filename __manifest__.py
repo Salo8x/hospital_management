@@ -8,6 +8,7 @@
         "views/patient_view.xml",
         "views/female_patients.xml",
         "views/appointment_view.xml",
+        "views/doctor_view.xml",
         "views/menu.xml",   
     ],
     

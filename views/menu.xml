@@ -29,6 +29,12 @@
         action = "action_hospital_appointment"
         parent= "menu_hospital_management_root"
     />
+    <menuitem 
+        id = "menu_doctors"
+        name = "Doctors"
+        action = "action_hospital_management_doctor"
+        parent= "menu_patient_master"
+    />
   
   
 </odoo>

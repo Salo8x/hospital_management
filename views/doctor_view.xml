@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_hospital_management_doctor_form" model="ir.ui.view">
+        <field name="name">hospital.management.doctor.form</field>
+        <field name="model">hospital.management.doctor</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="qualification"/>
+                        <field name="specialty"/>
+                        <field name="phone"/>
+                        <field name="is_available"/>
+                        
+                    </group>
+                </sheet>
+
+                
+            </form>
+        </field>
+    </record>
+
+    <record id="view_hospital_management_doctor_tree" model="ir.ui.view">
+        <field name="name">hospital.management.doctor.tree</field>
+        <field name="model">hospital.management.doctor</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="specialty"/>
+                <field name="phone"/>
+                <field name="is_available"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="action_hospital_management_doctor" model="ir.actions.act_window">
+        <field name="name">Doctors</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hospital.management.doctor</field>
+        <!-- <field name="context">{"search_default_popular_doctors":1}</field> -->
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>Create your first doctor</p>
+        </field>
+    </record>
+
+</odoo>
