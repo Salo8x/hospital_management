@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <menuitem
+        id="menu_hospital_management_root"
+        name="Hospital Management"
+    />
+    <menuitem
+        id="menu_patient_master"
+        name="Details"
+        parent="menu_hospital_management_root"
+    />
+    <menuitem
+        id="menu_patient"
+        name="Patients"
+        action="action_hospital_patient"
+        parent="menu_patient_master"
+    />
+
+    <menuitem 
+        id = "menu_female_patients"
+        name = "Female Patients"
+        action = "action_female_patients"
+        parent= "menu_patient_master"
+    />
+    <menuitem 
+        id = "menu_appointment"
+        name = "Appointments"
+        action = "action_hospital_appointment"
+        parent= "menu_hospital_management_root"
+    />
+  
+  
+</odoo>
